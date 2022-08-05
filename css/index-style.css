@@ -1,0 +1,29 @@
+@charset "UTF-8";
+body{
+    background: #B0C4DE;
+}
+.index-out-main{
+    background: #778899;
+    width: 280px;
+    height: 190px;
+    margin: auto;
+    border-radius: 30px;
+}
+.index-main{
+	margin-top: 20px;
+}
+.index-top{
+    text-align: center;
+    size: 400px;
+    color: black;
+	padding-top: 3px;
+}
+.index-data{
+    text-align: center;
+}
+.index-data-btn{
+    padding: 5px;
+    margin: 10px;
+    width: 100px;
+}
+
