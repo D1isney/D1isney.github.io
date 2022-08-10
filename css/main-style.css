@@ -72,21 +72,21 @@ body{
 }
 
 .main-center-center-floor-left{
-	width: 45%;
+	width: 46%;
 	height: 180px;
 	
 	border: 1px solid #2249b4;
-	margin: 5px auto;
+	margin: 3px auto;
 	border-radius: 10px;
 	box-shadow: 0 0 30px #2249b4 inset;
 }
 
 .main-center-center-floor-right{
-	width: 45%;
+	width: 46%;
 	height: 180px;
 	
 	border: 1px solid #2249b4;
-	margin: 5px auto;
+	margin: 3px auto;
 	border-radius: 10px;
 	box-shadow: 0 0 30px #2249b4 inset;
 }
