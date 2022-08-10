@@ -1,64 +1,109 @@
-@charset "utf-8";
 body{
 	background: url(../img/bg.jpg);
-	margin: 0 auto;
+	height: 100%;
+	color: white;
 }
-
-/* head */
-.main-all{
+/* 头部 */
+.main-top{
+	display: -webkit-box;
 	width: 100%;
-	color: #FFFFFF;
 }
 .main-top-left{
-	text-align: left;
 	width: 25%;
+}
+.main-top-right{
+	width: 25%;
+	float: right;
+	text-align: right;
 }
 .main-top-center{
-	text-align: center;
 	width: 50%;
-}
-.main-top-rigth{
-	text-align: right;
-	width: 25%;
+	text-align: center;
 }
 
 
-/* body NO1*/
-.main-main{
-	height: 380px;
-}
-.main-main-chart-table{
-	margin: auto;
-	width: 80%;
-	height: 380px;
-}
-.main-main-data-table{
-	margin: auto;
-	width: 80%;
-	height: 380px;
-}
 
-
-/* body NO2 */
-.main-main-floot{
-	height: 140px;
-}
-
-.main-main-floot-center-table{
+/* 主体 */
+.main-center{
 	width: 100%;
-	height:140px;
+	height: 450px;
+	display: -webkit-box;
 }
-.main-main-floot-center-table-left{
-	width: 33.3%;
+
+/* 中左 */
+.main-center-left{
+	width: 30%;
+	height: 540px;
+
 }
-.main-main-floot-center-table-center{
-	width: 33.3%;
+.main-center-left-top, 
+.main-center-left-center,
+.main-center-left-floor{
+	width: 100%;
+	height: 180px;
+	border: 1px solid #2249b4;
+	margin: 5px auto;
+	border-radius: 10px;
+	box-shadow: 0 0 30px #2249b4 inset;
 }
-.main-main-floot-center-table-rigth{
-	width: 33.3%;
+
+/* 中中 */
+.main-center-center{
+	width: 40%;
+	height: 540px;
 }
-.main-floot{
-	height: 20px;
+.main-center-center-top{
+	width: 100%;
+	height: 373px;
+	
+	text-align: center;
+	font-weight: bold;
 }
+.main-center-center-floor{
+	width: 100%;
+	height: 200px;
+	display: -webkit-box;
+}
+
+.main-center-center-floor-left{
+	width: 45%;
+	height: 180px;
+	
+	border: 1px solid #2249b4;
+	margin: 5px auto;
+	border-radius: 10px;
+	box-shadow: 0 0 30px #2249b4 inset;
+}
+
+.main-center-center-floor-right{
+	width: 45%;
+	height: 180px;
+	
+	border: 1px solid #2249b4;
+	margin: 5px auto;
+	border-radius: 10px;
+	box-shadow: 0 0 30px #2249b4 inset;
+}
+
+/* 中右 */
+.main-center-right{
+	width: 30%;
+	height: 540px;
+}
+.main-center-right-top,
+.main-center-right-center,
+.main-center-right-floor{
+	width: 100%;
+	height: 180px;
+	border: 1px solid #2249b4;
+	margin: 5px auto;
+	border-radius: 10px;
+	box-shadow: 0 0 30px #2249b4 inset;
+}
+
+
+
+
+
 
 
