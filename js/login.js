@@ -1,3 +1,4 @@
+// 登陆按钮
 function UserLogin(){
 	// Id.value;
 	// // document.getElementById("Id").value;
@@ -32,4 +33,10 @@ function UserLogin(){
 		msg.style.color = "red";
 		return;
 	}
+}
+
+// 重置按钮
+function UserReset(){
+	Id.value = "";
+	Password.value = "";
 }
