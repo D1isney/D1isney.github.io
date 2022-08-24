@@ -1,6 +1,7 @@
 body{
 	background: url(../img/bg.jpg);
-	height: 100%;
+	width: 1366px;
+	height: 768px;
 	color: white;
 }
 .main-all{
@@ -12,16 +13,26 @@ body{
 	width: 100%;
 }
 .main-top-left{
-	width: 25%;
+	width: 30%;
+	background: url(../img/top_left_bg.png) no-repeat;
+	height: 30px;
+	padding: 5px 15px;
 }
-.main-top-right{
-	width: 25%;
+
+.main-top-right {
+	width: 30%;
 	float: right;
 	text-align: right;
+	background: url(../img/top_right_bg.png) no-repeat;
+	height: 30px;
+	padding: 5px 15px 10px 3px;
 }
 .main-top-center{
-	width: 50%;
+	width: 40%;
 	text-align: center;
+	background: url(../img/top.png) no-repeat;
+	height: 55px;
+	background-size: 100%;
 }
 
 
@@ -31,6 +42,7 @@ body{
 	width: 100%;
 	height: 450px;
 	display: -webkit-box;
+	margin: 0 2%;
 }
 
 /* 中左 */
@@ -39,7 +51,7 @@ body{
 	height: 540px;
 
 }
-.main-center-left-top, 
+.main-center-left-top,
 .main-center-left-center,
 .main-center-left-floor{
 	width: 100%;
@@ -58,12 +70,12 @@ body{
 .main-center-center-top{
 	width: 95%;
 	height: 365px;
-	
+
 	border: 1px solid #2249b4;
 	margin: 5px auto;
 	border-radius: 10px;
 	box-shadow: 0 0 30px #2249b4 inset;
-	
+
 }
 .main-center-center-floor{
 	width: 100%;
@@ -74,7 +86,7 @@ body{
 .main-center-center-floor-left{
 	width: 46%;
 	height: 180px;
-	
+
 	border: 1px solid #2249b4;
 	margin: 3px auto;
 	border-radius: 10px;
@@ -84,7 +96,7 @@ body{
 .main-center-center-floor-right{
 	width: 46%;
 	height: 180px;
-	
+
 	border: 1px solid #2249b4;
 	margin: 3px auto;
 	border-radius: 10px;
