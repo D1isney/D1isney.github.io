@@ -4,121 +4,249 @@ body{
 	height: 100%;
 	color: white;
 }
-.main-all{
-	margin: auto;
-}
-/* 头部 */
-.main-top{
-	display: -webkit-box;
-	width: 100%;
-}
-.main-top-left{
-	width: 25%;
-	background: url(../img/top_left_bg.png) no-repeat;
-	height: 30px;
+*{
 	margin: 0;
-	padding: 5px 0px 0px 13px;
+	padding: 0;
+}
+li{
+	list-style: none;
 }
 
-.main-top-right {
-	width: 25%;
+
+
+/* 导航栏 */
+.nav{
+	background:url(../img/nav.png);
+	height: 40px;
+}
+.nav li button{
+	width: 10%;
 	float: right;
-	background: url(../img/top_right_bg.png) no-repeat;
-	height: 30px;
-	margin: 0px;
-	padding: 5px 6%;
+	height: 40px;
 	text-align: center;
-
+	font-weight: bold;
+	font-size: 1.2em;
+	background-color: transparent;
+	color: white;
+	border: 0;
 }
-.main-top-center{
-	width: 48%;
+.nav li button:hover{
+	background:url(../img/bg.jpg);
+	width: 10%;
+	height: 40px;
+}
+.nav-title{
+	width: 50%;
+	height: 40px;
+	font-size: 2em;
 	text-align: center;
-	background: url(../img/top.png) no-repeat;
-	height: 55px;
+}
+
+
+
+/* 猪场切换下拉栏 */
+#select{
+	display: none;
+}
+
+
+/* 占位 */
+.useless{
+	width: 20%;
+	height: 10px;
+	float: left;
+}
+
+
+
+
+
+/* 轮播页面 */
+.shuffling{
+	width: 60%;
+	height: 200px;
+	margin: auto;
+	display: flex;
+}
+
+
+
+/* map页面 */
+.map{
+	width: 60%;
+	height: 480px;
+	margin: auto;
+	display: none;
+}
+
+
+
+
+/* 主体*/
+.section{
+	display: none;
+}
+.section-ul{
+	width: 100%;
+	height: 680px;
+}
+.section-ul li{
+	float: left
+}
+
+/*  环控*/
+.section-ul-EC{
+	width: 20%;
+	height: 25%;
+}
+.section-ul-EC ul{
+	width: 100%;
+	height: 100%;
+}
+
+.section-ul-EC li{
+	clear: both;
+	background: url(../img/EC-Out.png);
+	background-size: 100%;
+}
+.section-ul-EC li:nth-child(1),.section-ul-EC li:nth-child(2),
+.section-ul-EC li:nth-child(3),.section-ul-EC li:nth-child(4){
+	width: 100%;
+	height: 100%;
+}
+
+
+
+/* 主屏幕 */
+.section-ul-CD{
+	width: 50%;
+	height: 100%;
+}
+.section-ul-CD ul{
+	width: 100%;
+	height: 100%;
+}
+.section-ul-CD ul li:nth-child(1){
+	width: 100%;
+	height: 460px;
+}
+.section-ul-CD ul li:nth-child(2){
+	width: 100%;
+	height: 50px;
+	background-color: #42B983;
+}
+.section-ul-CD ul li:nth-child(3){
+	width: 33.3%;
+	height: 25%;
+	float: left;
+	background: url(../img/EC-Out.png);
+	background-size: 100%;
+}
+.section-ul-CD ul li:nth-child(4){
+	width: 33.3%;
+	height: 25%;
+	float: left;
+	background: url(../img/EC-Out.png);
+	background-size: 100%;
+}
+.section-ul-CD ul li:nth-child(5){
+	width: 33.3%;
+	height: 25%;
+	float: left;
+	background: url(../img/EC-Out.png);
 	background-size: 100%;
 }
 
-
-
-/* 主体 */
-.main-center{
-	width: 99%;
-	height: 450px;
+/* 屏幕 */
+.section-ul-CD-TS{
 	display: -webkit-box;
 }
 
-/* 中左 */
-.main-center-left{
+/* 副屏 */
+.section-ul-CD-VS{
 	width: 30%;
-	height: 540px;
-
+	height: 92%;
+	padding: 1% 1%;
 }
-.main-center-left-top,
-.main-center-left-center,
-.main-center-left-floor{
+/* 副屏1 */
+.section-ul-CD-VS1{
+	width: 98%;
+	height: 30%;
+}
+/* 副屏2 */
+.section-ul-CD-VS2{
+	width: 98%;
+	height: 30%;
+}
+/* 副屏3 */
+.section-ul-CD-VS3{
+	width: 98%;
+	height: 30%;
+}
+
+/* 主屏 */
+.section-ul-CD-HS{
+	width: 67%;
+	height: 93%;
+	padding: 1% 0;
+}
+.section-ul-CD-TS iframe{
+	border-radius: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 红外摄像仪 */
+.section-ul-EC-ICI{
+	width: 30%;
+	height: 25%;
+}
+.section-ul-EC-ICI ul{
 	width: 100%;
-	height: 180px;
-	border: 1px solid #2249b4;
-	margin: 5px auto;
-	border-radius: 10px;
-	box-shadow: 0 0 30px #2249b4 inset;
+	height: 100%;
 }
-
-/* 中中 */
-.main-center-center{
-	width: 40%;
-	height: 540px;
-}
-.main-center-center-top{
-	width: 95%;
-	height: 365px;
-
-	border: 1px solid #2249b4;
-	margin: 5px auto;
-	border-radius: 10px;
-	box-shadow: 0 0 30px #2249b4 inset;
-
-}
-.main-center-center-floor{
+.section-ul-EC-ICI li{
 	width: 100%;
-	height: 200px;
+	height: 100%;
+	clear: both;
+	background: url(../img/EC-Out.png);
+	background-size: 100%;
+}
+
+.ICI{
+	width: 100%;
+	height: 100%;
 	display: -webkit-box;
 }
-
-.main-center-center-floor-left{
-	width: 46%;
-	height: 180px;
-
-	border: 1px solid #2249b4;
-	margin: 3px auto;
-	border-radius: 10px;
-	box-shadow: 0 0 30px #2249b4 inset;
+.ICI li{
+	background: transparent;
+	width: 50%;
 }
-
-.main-center-center-floor-right{
-	width: 46%;
-	height: 180px;
-
-	border: 1px solid #2249b4;
-	margin: 3px auto;
-	border-radius: 10px;
-	box-shadow: 0 0 30px #2249b4 inset;
-}
-
-/* 中右 */
-.main-center-right{
-	width: 30%;
-	height: 540px;
-}
-.main-center-right-top,
-.main-center-right-center,
-.main-center-right-floor{
+.trajectory{
 	width: 100%;
-	height: 180px;
-	border: 1px solid #2249b4;
-	margin: 5px auto;
-	border-radius: 10px;
-	box-shadow: 0 0 30px #2249b4 inset;
+	height: 100%;
+	display: -webkit-box;
+}
+.trajectory li{
+	background: transparent;
+	width: 50%;
+}
+.end{
+	width: 100%;
+	height: 100%;
+}
+.end li:nth-child(1){
+	background: transparent;
 }
 
 
@@ -127,3 +255,144 @@ body{
 
 
 
+
+
+/* data页面 */
+.data{
+	width: 100%;
+	height: 680px;
+	display: none;
+	background: url(../img/data_bg.png) no-repeat;
+}
+.data-ul{
+	width: 100%;
+	height: 100%;
+}
+.data-ul li{
+	float: left;
+	width: 20%;
+	height: 100%;
+}
+
+/* 侧边栏 */
+.data-nav{
+	height: 100%;
+	width: 20%;
+
+}
+.data-nav ul button{
+	width: 80%;
+	height: 30px;
+	color: white;
+	border: 0;
+	background: transparent;
+	font-weight: bold;
+	font-size: 1.2em;
+	margin: 4px 0px;
+}
+.data-nav ul li:hover{
+	background-color: #00BFFF;
+}
+
+
+
+.data-main{
+	width: 70%;
+	height: 100%;
+}
+
+/* Home page 首页*/
+.Hg{
+	width: 100%;
+	height: 100%;
+	/* display: none; */
+}
+.Hg p{
+	text-indent: 2em;
+}
+
+
+/* 温度 */
+.Tp{
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.Tp table{
+	width: 100%;
+}
+
+
+/* 湿度 */
+.Hm{
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.Hm table{
+	width: 100%;
+}
+
+
+/* 硫化氢 */
+.Hs{
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.Hs table{
+	width: 100%;
+}
+
+/* 氨气 */
+.Am{
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.Am table{
+	width: 100%;
+}
+
+/* 二氧化碳 */
+.Cd{
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.Cd table{
+	width: 100%;
+}
+
+/* PM1.0 */
+.PM1{
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.PM1 table{
+	width: 100%;
+}
+
+/* PM2.5 */
+.PM2{
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.PM2 table{
+	width: 100%;
+}
+
+
+
+
+
+
+/* 个人信息页面*/
+
+.myself{
+	width: 100%;
+	height: 100%;
+	display: none;
+}

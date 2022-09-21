@@ -22,10 +22,11 @@ function UserLogin(){
 		msg.innerText = "登陆成功！";
 		msg.style.color = "green";
 		
-		// 登陆成功跳转
-		setTimeout(function(){
-			window.location.href = "./main/main.html";
-		},1500);
+		// // 登陆成功跳转
+		// setTimeout(function(){
+		// 	window.location.href = "./main/main.html";
+		// },1500);
+
 	}
 	else{
 		msg.style.display = "block";

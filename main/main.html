@@ -1,350 +1,350 @@
 <!DOCTYPE html>
 <html>
+	<!--
+	 
+		我看谁敢敲我代码
+		
+		   __,;;;;;,__          
+		.-" ;;;;;;;;; "-.       
+	   /   /`_ / \ _`\   \      
+	   |  / (.)| |(.) \  |      
+	   '-'| .--'_'--. |'-'      
+		  |/   \_/   \|         
+		  |     |     |         
+		 / \ __.=.__ / \        
+		/:. '._____.'   \       
+	   ;::'             .;      
+	   |               ::|      
+	 .-|                '|-.    
+	/  |  . /     .:\    |  \   
+	|  | ::|    .:::'|   | .|   
+	|  (  ')    ':'  (.  )::|   
+	|: |   |;       ;|:: | `|   
+	|' |   | \     / |'  |  |   
+   (_(_|   |_/`"""`\_|   |_)_)  
+	  (_(_(_)       (_)_)_)    
+
+	
+	
+
+																															/  .'.'"``--...----------.___.----------...--''"`.`.  \    
+																															| .'.'         .                       .         `.`. |    
+																															`. .'|     . ' - . _    `-----'    _ . - ' .     |`. .'    
+																															 `.' `|   .'   _     "-._     _.-"     _   `.   |' `.'     
+																																  |  |        " -.           .- "        |  |          
+																																   \|        ;;..  "|i. .i|"  ..;;        |/           
+																																   `|      ,---.``.   ' '   .'',---.      |'           
+																																	|    <'(__.'>.'---` '---`.<`.__)`>    |            
+																																	|   `. `~  .'  ,-------.  `.  ~'.'    |            
+																																	|  |=_"`=.'  . `-.___.-' .  `.='"_=|  |            
+																																	|  |  ==/  : ` :   i   : ' :  \==  |  |            
+																																	|  | ==/      /\___|___/\      \== |  |            
+																																	 `.| =Y      .' """_""" `.      Y= |.'             
+																																	   L ||      ;  .=="==.  ;      || J               
+																																		\ ;     .' '       ` `.     ; /                
+																																		 `.     ;             ;     .'                 
+																																		  ;    ;'\           /`;    ;                  
+																																		  `;  .'.'/.       ,\`.`.  ;'                  
+																																		   `-=;_-'  `-----'  `-_;=-'    
+																																								
+	-->
+	
 	<head>
 		<meta charset="utf-8">
 		<title>猪只检测管理系统</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="../css/main-style.css">
-		<script src="../js/main.js" type="text/javascript"></script>
+		<script src="../js/data.js"></script>
+		<script src="../js/main.js"></script>
 		<script src="../js/echarts.js"></script>
+		<script src="../js/map.js"></script>
+		<script src="../js/shuffling.js"></script>
+		<script src="../js/CDShow.js"></script>
+		<script src="../js/EC-Ts.js"></script>
 	</head>
-	<body>
-		<div class="main-all">
-		<!-- 头部 -->
-		<div class="main-top">
-			<div class="main-top-left">MAC-2022-8-10</div>
-			<div class="main-top-center">猪只环境检测系统</div>
-			<div class="main-top-right" id="show_time">时间</div>
-		</div>
+	<body>	
+		<nav class="nav">
+			<ul>
+				<li><button onclick="loginOut()">登出</button></li>
+				<li><button onclick="mySelfMsg()">个人信息</button></li>
+				<li><button onclick="data()">数据</button></li>
+				<li><button onclick="RTM()">实时监控</button></li>
+				<li><button onclick="map()">地图</button></li>
+				<div class="nav-title">Intelligent Animal Husbandry System</div>
+			</ul>
+		</nav>
 		
-		<!-- 主体部分 -->
-		<div class="main-center">
-			<!-- 中左 -->
-			<div class="main-center-left">
-				
-				<!-- 中左上空气质量检测图 -->
-				<div class="main-center-left-top" id="main-center-left-top">
-					<script>
-					var chartDom = document.getElementById('main-center-left-top');
-					var myChart = echarts.init(chartDom);
-					var option;
-					
-					option = {
-					  tooltip: {
-					    trigger: 'item'
-					  },
-					  legend: {
-					    top: '3%',
-					    left: 'center'
-					  },
-					  series: [
-					    {
-					      name: '空气质量',
-					      type: 'pie',
-					      radius: ['40%', '70%'],
-					      avoidLabelOverlap: false,
-					      itemStyle: {
-					        borderRadius: 10,
-					        borderColor: '#fff',
-					        borderWidth: 2
-					      },
-					      label: {
-					        show: false,
-					        position: 'center'
-					      },
-					      emphasis: {
-					        label: {
-					          show: true,
-					          fontSize: '20',
-					          fontWeight: 'bold'
-					        }
-					      },
-					      labelLine: {
-					        show: false
-					      },
-					      data: [
-					        { value: 1048, name: '氧气' },
-					        { value: 735, name: '二氧化碳' },
-					        { value: 580, name: '二氧化硫' },
-					        { value: 484, name: '氨气' },
-					        { value: 300, name: '硫化氢' }
-					      ]
-					    }
-					  ]
-					};
-					option && myChart.setOption(option);
-					</script>
-				</div>
-				
-				<!-- 中左中氨气质量检测图 -->
-				<div class="main-center-left-center" id="main-center-left-center">
-					<script>
-						var chartDom = document.getElementById('main-center-left-center');
-						var myChart = echarts.init(chartDom);
-						var option;
-						
-						option = {
-							title:{
-								text: '氨气',
-							},
-							xAxis: {
-								type: 'category',
-								data: ['0:00', '1:00', '2:00', '3:00', '4:00', '5:00', '6:00','7:00','8:00','9:00','10:00','11:00','12:00']
-							  },
-							yAxis: {
-								name: '氨气含量',
-								type: 'value',
-							},
-							series: [
-							{
-							    data: [30, 23, 24, 18, 35, 14, 26,21,32,23,35,26,34,32],
-							    type: 'line',
-							    smooth: true,
-								name: '含量'
-								}
-							  ]
-							};
-					option && myChart.setOption(option);
-					</script>
-					
-				</div>
-				
-				<!-- 中左下 -->
-				<div class="main-center-left-floor" id="main-center-left-floor">
-					<!-- <script>
-					var myCharts = echarts.init(document.getElementById('main-center-left-floor'));
-					option = {
-					  tooltip: {
-					    trigger: 'axis',
-					    axisPointer: {
-					      type: 'shadow'
-					    }
-					  },
-					  grid: {
-					    left: '3%',
-					    right: '4%',
-					    bottom: '3%',
-					    containLabel: true
-					  },
-					  title:{
-					    text: '硫化氢含量'
-					  },
-					  xAxis: [
-					    {
-					      type: 'category',
-					      data: ['0:00', '1:00', '2:00', '3:00', '4:00', '5:00', '6:00','7:00','8:00','9:00','10:00','11:00','12:00'],
-					      axisTick: {
-					        alignWithLabel: true
-					      }
-					    }
-					  ],
-					  yAxis: [
-					    {
-					      type: 'value'
-					    }
-					  ],
-					  series: [
-					    {
-					      name: '含量',
-					      type: 'bar',
-					      barWidth: '55%',
-					      data: [10, 52, 200, 334, 390, 330, 220,12,33,32,65,43,23]
-					    }
-					  ]
-					};
-					myCharts.setOption(option);
-					</script> -->
-				</div>
+		
+		
+		<!-- 猪场切换下拉 -->
+		<form action="../index.html" method="post" class="select" id="select">
+			<!-- 占位 -->
+			<div class="useless"></div>
+			场景：
+			<select name="">
+				<option value="">猪场一</option>
+				<option value ="">猪场二</option>
+			</select>
+		</form>
+
+<!-- 轮播页面 -->
+		<section class="shuffling" id="shuffling">
+			<script>
+				shuffling();
+			</script>
 			
+		</section>
+		
+<!-- map页面 -->
+		<section id="map" class="map">
+			<!-- 页面内容 -->
 			
+		</section>
+
+
+
+<!-- 监控页面 -->
+		<section class="section" id = "section">
+			<ul class="section-ul">
+				<!-- 环控 -->
+				<li class="section-ul-EC">
+					<ul>
+						<li id="allData"></li>
+						<li>温度</li>
+						<li>湿度</li>
+						<li>硫化氢</li>
+					</ul>
+				</li>
+				
+				<!-- 主屏幕 -->
+				<li class="section-ul-CD">
+					<ul>
+						<li class="section-ul-CD-TS">
+							<div class="section-ul-CD-VS">
+								<div class="section-ul-CD-VS1" onclick="Vs1_Show()">
+									<input type="button" value="副屏1">
+									<!-- <iframe id="Vs1" src="https://open.ys7.com/ezopen/h5/iframe?url=ezopen://open.ys7.com/J81961585/1.hd.live&autoplay=1&accessToken=at.2uk8dl7p38z2hbeba2jc9htb6yt6wfhy-99sicpomqq-0v0pwba-bkwmjisph" width="100%" height="100%" style="border: 0; margin: 0; padding: 0;"></iframe> -->
+								</div>
+								<br>
+								<div class="section-ul-CD-VS2" onclick="Vs2_Show()">
+									<input type="button" value="副屏2">
+									<!-- <iframe id="Vs2" src="https://open.ys7.com/ezopen/h5/iframe?url=ezopen://open.ys7.com/J81961585/1.hd.live&autoplay=1&accessToken=at.2uk8dl7p38z2hbeba2jc9htb6yt6wfhy-99sicpomqq-0v0pwba-bkwmjisph" width="100%" height="100%" style="border: 0; margin: 0; padding: 0;"></iframe> -->
+								</div>
+								<br>
+								<div class="section-ul-CD-VS3" onclick="Vs3_Show()">
+									<input type="button" value="副屏3">
+									<!-- <iframe id="Vs3" src="https://open.ys7.com/ezopen/h5/iframe?url=ezopen://open.ys7.com/J81961585/1.hd.live&autoplay=1&accessToken=at.2uk8dl7p38z2hbeba2jc9htb6yt6wfhy-99sicpomqq-0v0pwba-bkwmjisph" width="100%" height="100%" style="border: 0; margin: 0; padding: 0;"></iframe> -->
+								</div>
+							</div>
+							<div class="section-ul-CD-HS">
+								<!-- <iframe id="Cd-Hs" src="https://open.ys7.com/ezopen/h5/iframe?url=ezopen://open.ys7.com/J81961585/1.hd.live&autoplay=1&accessToken=at.2uk8dl7p38z2hbeba2jc9htb6yt6wfhy-99sicpomqq-0v0pwba-bkwmjisph" width="100%" height="100%" style="border: 0; margin: 0; padding: 0;"></iframe> -->
+							</div>
+						</li>
+						<li>
+							nav
+						</li>
+						<li>
+							氨气
+						</li>
+						<li>
+							Co2
+						</li>
+						<li>
+							PM
+						</li>
+					</ul>
+				</li>
+				
+				<!-- 红外摄像仪 -->
+				<li class="section-ul-EC-ICI">
+					<ul>
+						<li>
+							<ul class="ICI">
+								<li>监控</li>
+								<li>展示</li>
+							</ul>
+						</li>
+						<li>
+							<ul class="trajectory">
+								<li>运动轨迹</li>
+								<li>行为</li>
+							</ul>
+						</li>
+						<li>
+							<ul class="end">
+								<li>饲料</li>
+								<li>长肉趋向</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+		
+<!-- 数据页面 -->
+		<section class="data" id="data">
+			<!-- 数据导航栏 -->
+			<nav class="data-nav">
+				<ul>
+					<li>
+						<button onclick="Hg()">首页</button>
+					</li>
+					<li>
+						<button onclick="Tp()">温度</button>
+					</li>
+					<li>
+						<button onclick="Hm()">湿度</button>
+					</li>
+					<li>
+						<button onclick="Hs()">硫化氢</button>
+					</li>
+					<li>
+						<button onclick="Am()">氨气</button>
+					</li>
+					<li>
+						<button onclick="Cd()">二氧化碳</button>
+					</li>
+					<li>
+						<button onclick="PM1()">PM1.0</button>
+					</li>
+					<li>
+						<button onclick="PM2()">PM2.5</button>
+					</li>
+				</ul>
+			</nav>
+			
+			<!-- 展示内容 -->
+			<div class="data-main">
+				<!-- 占位 -->
+				<br>
+				<!-- 首页 -->
+				<section class="Hg" id="Hg">
+					<h3>产品介绍</h3>
+					<p>msg</p>	
+				</section>
+				
+				<!-- 温度 -->
+				<section class="Tp" id="Tp">
+					<h3>温度</h3>
+					<table border="1">
+						<tr>
+							<th>温度(°C)</th>
+							<th>时间</th>
+						</tr>
+						<tr>
+							<td>Data</td>
+							<td>xxxx-xx-xx</td>
+						</tr>
+					</table>
+				</section>
+				
+				<!-- 湿度 -->
+				<section class="Hm" id="Hm">
+					<h3>湿度</h3>
+					<table border="1">
+						<tr>
+							<th>湿度(%)</th>
+							<th>时间</th>
+						</tr>
+						<tr>
+							<td>Data</td>
+							<td>xxxx-xx-xx</td>
+						</tr>
+					</table>
+				</section>
+			
+				<!-- 硫化氢 -->
+				<section class="Hs" id="Hs">
+					<h3>温度</h3>
+					<table border="1">
+						<tr>
+							<th>硫化氢(mg/m^3)</th>
+							<th>时间</th>
+						</tr>
+						<tr>
+							<td>Data</td>
+							<td>xxxx-xx-xx</td>
+						</tr>
+					</table>
+				</section>
+				
+				<!-- 氨气 -->
+				<section class="Am" id="Am">
+					<h3>氨气</h3>
+					<table border="1">
+						<tr>
+							<th>氨气(mg/L)</th>
+							<th>时间</th>
+						</tr>
+						<tr>
+							<td>Data</td>
+							<td>xxxx-xx-xx</td>
+						</tr>
+					</table>
+				</section>
+				
+				<!--  二氧化碳-->
+				<section class="Cd" id="Cd">
+					<h3>二氧化碳</h3>
+					<table border="1">
+						<tr>
+							<th>二氧化碳(mol/L)</th>
+							<th>时间</th>
+						</tr>
+						<tr>
+							<td>Data</td>
+							<td>xxxx-xx-xx</td>
+						</tr>
+					</table>
+				</section>
+				
+				<!-- PM1.0 -->
+				<section class="PM1" id="PM1">
+					<h3>PM1.0</h3>
+					<table border="1">
+						<tr>
+							<th>PM1.0(ppm)</th>
+							<th>时间</th>
+						</tr>
+						<tr>
+							<td>Data</td>
+							<td>xxxx-xx-xx</td>
+						</tr>
+					</table>
+				</section>
+				
+				<!-- PM2.5 -->
+				<section class="PM2" id="PM2">
+					<h3>PM2.5</h3>
+					<table border="1">
+						<tr>
+							<th>PM2.5(ppm)</th>
+							<th>时间</th>
+						</tr>
+						<tr>
+							<td>Data</td>
+							<td>xxxx-xx-xx</td>
+						</tr>
+					</table>
+				</section>
 			</div>
 			
-			<!-- 中中 -->
-			<div class="main-center-center">
-				
-				<!-- 中上 -->
-				<div class="main-center-center-top" id="main-center-center-top">
-		
-					<!-- <iframe src="https://ditu.amap.com/?amapexchange=%2F" width="95%" height="95%" style="margin:9px;"></iframe> -->
-					
-				</div>
-				
-				<!-- 中下 -->
-				<div class="main-center-center-floor">
-					
-					<!-- 中下上 -->
-					<div class="main-center-center-floor-left">状态栏</div>
-					
-					<!-- 中下下 -->
-					<div class="main-center-center-floor-right">状态栏</div>
-				</div>
-			</div>
+		</section>
 			
+<!--  个人信息页面-->
+		<section class="myself" id="Myself">
+			<h3>个人信息展示</h3>
+			<section>
+				<!-- 占位 -->
+				<div class="useless"></div>
+				
+				用户：
+				<input type="text" >
+				
+			</section>
+		</section>
 		
-			<!-- 中右 -->
-			<div class="main-center-right">
-				
-				<!-- 中右上 -->
-				<div class="main-center-right-top" id="main-center-right-top">
-					<!-- <script>
-					var chartDom = document.getElementById('main-center-right-top');
-					var myChart = echarts.init(chartDom);
-					var option;
-					
-					option = {
-						title:{
-							text:'温湿度'
-						},
-					  xAxis: {
-					    type: 'category',
-					    data: [
-					      '0:00',
-					      '1:00',
-					      '2:00',
-					      '3:00',
-					      '4:00',
-					      '5:00',
-					      '6:00',
-					      '7:00',
-					      '8:00',
-					      '9:00',
-					      '10:00',
-					      '11:00',
-					      '12:00'
-					    ]
-					  },
-					  yAxis: [
-					    {
-					      name: '温度(摄氏度)',
-					      type: 'value',
-					      max: 50
-					    },
-					    {
-					      name: '湿度(%)',
-					      nameLocation: 'start',
-					      alignTicks: true,
-					      type: 'category',
-					      data: [100, 80, 60, 40, 20, 0],
-					      inverse: true
-					    }
-					  ],
-					  series: [
-					    {
-					      data: [27, 26, 28, 28.4, 29, 29.6, 29, 30, 31, 32, 35, 36.1, 37.1, 36.3],
-					      type: 'line'
-					    },
-					    {
-					      data: [20, 40, 55, 42, 42, 43, 53, 32, 34, 23, 21, 23],
-					      type: ' line'
-					    }
-					  ]
-					};
-					myChart.setOption(option);
-					</script> -->
-				</div>
-				
-				<!-- 中右中 -->
-				<div class="main-center-right-center" id="main-center-right-center">
-					<!-- <script>
-					var chartDom = document.getElementById('main-center-right-center');
-					var myChart = echarts.init(chartDom);
-					var option;
-					option = {
-					  title: {
-						text: 'PM1.0'
-					  },
-					  xAxis: {
-						type: 'category',
-						boundaryGap: false,
-						data: [
-						  '0:00',
-						  '1:00',
-						  '2:00',
-						  '3:00',
-						  '4:00',
-						  '5:00',
-						  '6:00',
-						  '7:00',
-						  '8:00',
-						  '9:00',
-						  '10:00',
-						  '11:00',
-						  '12:00'
-						]
-					  },
-					  yAxis: {
-						type: 'value'
-					  },
-					  series: [
-						{
-						  data: [
-							100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100
-						  ],
-						  type: 'line',
-						  areaStyle: {}
-						},
-						{
-						  data: [10, 22, 21, 26, 21, 31, 31, 10, 22, 21, 26, 21, 31, 31],
-						  type: 'line'
-						}
-					  ]
-					};
-					myChart.setOption(option);
-					</script> -->
-				</div>
-				
-				<!-- 中右下 -->
-				<div class="main-center-right-floor" id="main-center-right-floor">
-					<!-- <script>
-					var chartDom = document.getElementById('main-center-right-floor');
-					var myChart = echarts.init(chartDom);
-					var option;
-					
-					option = {
-					  title: {
-					    text: 'PM2.5'
-					  },
-					  xAxis: {
-					    type: 'category',
-					    boundaryGap: false,
-					    data: [
-					      '0:00',
-					      '1:00',
-					      '2:00',
-					      '3:00',
-					      '4:00',
-					      '5:00',
-					      '6:00',
-					      '7:00',
-					      '8:00',
-					      '9:00',
-					      '10:00',
-					      '11:00',
-					      '12:00'
-					    ]
-					  },
-					  yAxis: {
-					    type: 'value'
-					  },
-					  series: [
-					    {
-					      data: [
-					        100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100
-					      ],
-					      type: 'line',
-					      areaStyle: {}
-					    },
-					    {
-					      data: [10, 22, 21, 26, 21, 31, 31, 10, 22, 21, 26, 21, 31, 31],
-					      type: 'line'
-					    }
-					  ]
-					};
-					
-					myChart.setOption(option);
-					</script> -->
-				</div>
-			</div>
-		</div>
-		</div>
 	</body>
 </html>
