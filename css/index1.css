@@ -1,0 +1,358 @@
+*{
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+li:hover{
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 1.1em;
+}
+body::-webkit-scrollbar {
+    display: none; /* Chrome Safari */
+}
+
+body {
+    background-color: #ffffff;
+    scrollbar-width: none; /* firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+    overflow-x: hidden;
+    /*font-family: Arial, sans-serif;*/
+    overflow-y: auto;
+    background-size: cover;
+    transition: filter 0.3s ease; /* 添加虚化效果的过渡动画 */
+
+    position: absolute;
+
+    font-family: Arial, serif;
+}
+.all{
+    /* width: 1920px; */
+    /*background-color: #000000;*/
+    /* margin: auto; */
+}
+.title{
+    width: 100%;
+    height: 35px;
+    background-color: rgb(18,18,18);
+    position: fixed;
+    /* margin: auto; */
+}
+.nav{
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    /*align-items: center;*/
+}
+.nav ul{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    color: #cccccc;
+    display: flex;
+}
+.nav ul li{
+    float: left;
+    width: 85px;
+    line-height: 35px;
+    font-size: .3em;
+}
+
+
+
+.dropdown-content {
+    overflow: hidden; /* 初始隐藏下拉菜单 */
+    position: absolute;
+    background-color: rgb(22,22,23);
+    width: 100%;
+    transition: height 0.5s ease; /* 过渡效果 */
+    height: 0; /* 初始高度为0 */
+}
+  
+.dropdown-content.active {
+    height: 400px; /* 下拉菜单完全展开的高度 */
+}
+  
+.main-content {
+    padding: 50px;
+}
+  
+.blur {
+    filter: blur(5px); /* 背景虚化效果 */
+}
+  
+
+.shop-content .content{
+    width: 1280px;
+    height: 100%;
+    margin: auto;
+}
+.lPad-content .content{
+    width: 1280px;
+    height: 100%;
+    margin: auto;
+}
+.Pac-content .content{
+    width: 1280px;
+    height: 100%;
+    margin: auto;
+}
+.lPhone-content .content{
+    width: 1280px;
+    height: 100%;
+    margin: auto;
+}
+table {
+    border-collapse: collapse;
+    width: 200px;
+    margin-left: 5%;
+    float: left;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: transparent;
+}
+
+
+.content1{
+    max-width: 1980px;
+    min-width: 1280px;
+    /*width: 1280px;*/
+    margin: auto;
+    height: 100px;
+    /*line-height: 150px;*/
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    /*background-color: #fff;*/
+    flex-wrap: wrap;
+    background-color: #000000;
+}
+.content1 div{
+    width: 100%;
+    color: rgb(245,245,247);
+    text-align: center;
+}
+.content2{
+    max-width: 1980px;
+    min-width: 1280px;
+    /*height: 400px;*/
+    background-color: rgb(0,0,0);
+    margin: auto;
+}
+.content2 .content2-img{
+    width: 1200px;
+    height: 400px;
+    margin: auto;
+
+    background: url("../img/pineapple1.jpg") no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*display: flex;*/
+}
+.content3{
+    width: 100vw;
+    /*height: 400px;*/
+    background-color: rgb(245,245,247);
+    margin: auto;
+}
+.content3 .content3-img{
+    width: 1200px;
+    height: 400px;
+    margin: auto;
+
+    background: url("../img/boluo2.jpg") no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*display: flex;*/
+}
+.content4{
+    max-width: 1980px;
+    min-width: 1280px;
+    margin: auto auto;
+}
+.content4 .content4-top{
+    width: 100%;
+    height: 400px;
+}
+.content4 .content4-bottom{
+    width: 100%;
+    height: 400px;
+
+}
+.content4 .content4-top .content4-top-left{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.content4 .content4-top .content4-top-left .content4-top-left-img{
+    width: 98%;
+    height: 98%;
+    background: url("../img/1.jpg") no-repeat;
+    background-size: 100% 100%;
+    margin-left: 1%;
+    margin-top: 1%;
+    text-align: center;
+}
+
+.content4 .content4-top .content4-top-right{
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+.content4 .content4-top .content4-top-right .content4-top-right-img{
+    width: 98%;
+    height: 98%;
+    background: url("../img/2.jpg") no-repeat;
+    background-size: 100% 100%;
+    margin-left: 1%;
+    margin-top: 1%;
+    text-align: center;
+}
+
+
+.content4 .content4-bottom .content4-bottom-left{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.content4 .content4-bottom .content4-bottom-left .content4-bottom-left-img{
+    width: 98%;
+    height: 98%;
+    background: url("../img/3.jpg") no-repeat;
+    background-size: 100% 100%;
+    margin-left: 1%;
+    margin-top: 1%;
+    text-align: center;
+}
+
+.content4 .content4-bottom .content4-bottom-right{
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+.content4 .content4-bottom .content4-bottom-right .content4-bottom-right-img{
+    width: 98%;
+    height: 98%;
+    background: url("../img/4.jpg") no-repeat;
+    background-size: 100% 100%;
+    margin-left: 1%;
+    margin-top: 1%;
+    text-align: center;
+}
+
+.content5{
+    max-width: 1980px;
+    min-width: 1280px;
+    margin: 1% auto auto;
+}
+.el-carousel {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+.medium{
+    width: 100%;
+    height: 100%;
+}
+
+
+.content6{
+    width: 100%;
+    /*height: 800px;*/
+    background-color: #eaeaea;
+    /*clear: both;*/
+}
+.content6-title{
+    max-width: 1100px;
+    min-width: 1100px;
+    height: 180px;
+    margin: auto;
+}
+.content6-center{
+    max-width: 1100px;
+    min-width: 1100px;
+    height: 580px;
+    margin: auto;
+}
+.content6-center thead th{
+   text-align: center;
+}
+.content6-center tbody tr,td{
+    text-align: center;
+}
+.content6-center thead th{
+    font-size: 1em;
+    font-weight: bold;
+}
+.content6-center tbody tr,td{
+    font-size: .8em;
+}
+.content6-center tbody td{
+    text-decoration: none;
+}
+.content6-center tbody td:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+
+
+
+.backTop-custom-style {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #0c0c0c;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.content6-foot{
+    max-width: 1100px;
+    min-width: 1100px;
+    height: 30px;
+    margin: auto;
+    position: relative;
+    bottom: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content6-foot .img{
+    width: 10%;
+    height: 100%;
+    background: url("../img/disney.png") no-repeat;
+    background-size: 100% 100%;
+    float: right;
+}
+
+
+
+
+
+
+
+

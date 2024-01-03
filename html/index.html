@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href=" ../css/index1.css"/>
+    <link rel="stylesheet" href="../css/elementui.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/element-ui@2.15.3/lib/theme-chalk/index.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="144x144" href="../img/icon.ico"/>
+    <link rel="apple-touch-icon" type="image/png" sizes="144x144" href="../img/icon.ico"/>
+    <script src="../js/vue.min.js"></script>
+    <script src="../js/elementui.js"></script>
+    <title>Pineapple</title>
+</head>
+<body>
+<div class="all" id="app">
+    <div class="title">
+        <nav class="nav">
+            <ul>
+                <li>
+                    <img style="width: 30%;height: 80%;margin-top: 5%;margin-left: 40%;" src="../img/logo.png"
+                         alt="图片加载失败！">
+                </li>
+                <li id="shop">Shop</li>
+                <li id="Pac">Pac</li>
+                <li id="lPad">lPad</li>
+                <li id="lPhone">lPhone</li>
+                <li>Watch</li>
+                <li>Vision</li>
+                <li>SkyPods</li>
+                <li>TV & Home</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;Game</li>
+                <li>Accessories</li>
+                <li>&nbsp;&nbsp;&nbsp;Support</li>
+                <li>
+                    <img style="width: 20%;height: 70%;margin-top: 7.5%;margin-left: 20%;" src="../img/search.png"
+                         alt="图片加载失败！">
+                </li>
+                <li>
+                    <img style="width: 20%;height: 70%;margin-top: 7.5%;" src="../img/shop.png" alt="图片加载失败！">
+                </li>
+            </ul>
+        </nav>
+        <div class="shop-content dropdown-content">
+            <div class="content">
+                <table>
+                    <thead style="color: #ccc; font-size: .8em;font-weight: 200;">
+                    <tr>
+                        <th>Shop</th>
+                    </tr>
+                    </thead>
+                    <tbody style="font-size: 1.3em;font-weight: bold;color: #fff;">
+                    <tr>
+                        <td>Shop the Latest</td>
+                    </tr>
+                    <tr>
+                        <td>Pac</td>
+                    </tr>
+                    <tr>
+                        <td>lPhone</td>
+                    </tr>
+                    <tr>
+                        <td>Pineapple Watch</td>
+                    </tr>
+                    <tr>
+                        <td>Accessories</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <table>
+                    <thead style="color: #ccc; font-size: .8em;font-weight: 200;">
+                    <tr>
+                        <th>Quick Links</th>
+                    </tr>
+                    </thead>
+                    <tbody style="font-size: .8em;font-weight: bold;color: #fff;">
+                    <tr>
+                        <td>Shop the Latest</td>
+                    </tr>
+                    <tr>
+                        <td>Order Status</td>
+                    </tr>
+                    <tr>
+                        <td>Pineapple Trade In</td>
+                    </tr>
+                    <tr>
+                        <td>Financing</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <table>
+                    <thead style="color: #ccc; font-size: .8em;font-weight: 200;">
+                    <tr>
+                        <th>Shop Special Stores</th>
+                    </tr>
+                    </thead>
+                    <tbody style="font-size: .8em;font-weight: bold;color: #fff;">
+                    <tr>
+                        <td>Certified Refurbished</td>
+                    </tr>
+                    <tr>
+                        <td>Education</td>
+                    </tr>
+                    <tr>
+                        <td>Business</td>
+                    </tr>
+                    <tr>
+                        <td>Veterans and Military</td>
+                    </tr>
+                    <tr>
+                        <td>Government</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="Pac-content dropdown-content">
+            <div class="content">
+                <table>
+                    <thead style="color: #ccc; font-size: .8em;font-weight: 200;">
+                    <tr>
+                        <th>Explore Pac</th>
+                    </tr>
+                    </thead>
+                    <tbody style="font-size: 1.3em;font-weight: bold;color: #fff;">
+                    <tr>
+                        <td>Explore All Pac</td>
+                    </tr>
+                    <tr>
+                        <td>PacBook Air</td>
+                    </tr>
+                    <tr>
+                        <td>PacBook Pro</td>
+                    </tr>
+                    <tr>
+                        <td>lPac</td>
+                    </tr>
+                    <tr>
+                        <td>Pac mini</td>
+                    </tr>
+                    <tr>
+                        <td>Pac Studio</td>
+                    </tr>
+                    <tr>
+                        <td>Displays</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <table>
+                    <thead style="color: #ccc; font-size: .8em;font-weight: 200;">
+                    <tr>
+                        <th>Shop Pac</th>
+                    </tr>
+                    </thead>
+                    <tbody style="font-size: .8em;font-weight: bold;color: #fff;">
+                    <tr>
+                        <td>Shop Pac</td>
+                    </tr>
+                    <tr>
+                        <td>Pac Accessories</td>
+                    </tr>
+                    <tr>
+                        <td>Pineapple Trade In</td>
+                    </tr>
+                    <tr>
+                        <td>Financing</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <table>
+                    <thead style="color: #ccc; font-size: .8em;font-weight: 200;">
+                    <tr>
+                        <th>Shop from Pac</th>
+                    </tr>
+                    </thead>
+                    <tbody style="font-size: .8em;font-weight: bold;color: #fff;">
+                    <tr>
+                        <td>Pac Support</td>
+                    </tr>
+                    <tr>
+                        <td>PineappleCare+ for lPad</td>
+                    </tr>
+                    <tr>
+                        <td>PacOS Sonoma</td>
+                    </tr>
+                    <tr>
+                        <td>Apps by Pineapple</td>
+                    </tr>
+                    <tr>
+                        <td>lCloud+</td>
+                    </tr>
+                    <tr>
+                        <td>Education</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="lPad-content dropdown-content">
+            <div class="content">
+                <table>
+                    <thead style="color: #ccc; font-size: .8em;font-weight: 200;">
+                    <tr>
+                        <th>Explore lPad</th>
+                    </tr>
+                    </thead>
+                    <tbody style="font-size: 1.3em;font-weight: bold;color: #fff;">
+                    <tr>
+                        <td>Explore All lPad</td>
+                    </tr>
+                    <tr>
+                        <td>lPad Pro</td>
+                    </tr>
+                    <tr>
+                        <td>lPad Air</td>
+                    </tr>
+                    <tr>
+                        <td>lPad</td>
+                    </tr>
+                    <tr>
+                        <td>lPad mini</td>
+                    </tr>
+                    <tr>
+                        <td>Pineapple Pencil</td>
+                    </tr>
+                    <tr>
+                        <td>KeyBoards</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <table>
+                    <thead style="color: #ccc; font-size: .8em;font-weight: 200;">
+                    <tr>
+                        <th>Shop lPad</th>
+                    </tr>
+                    </thead>
+                    <tbody style="font-size: .8em;font-weight: bold;color: #fff;">
+                    <tr>
+                        <td>Shop lPad</td>
+                    </tr>
+                    <tr>
+                        <td>lPad Accessories</td>
+                    </tr>
+                    <tr>
+                        <td>Pineapple Trade In</td>
+                    </tr>
+                    <tr>
+                        <td>Financing</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <table>
+                    <thead style="color: #ccc; font-size: .8em;font-weight: 200;">
+                    <tr>
+                        <th>More from lPad</th>
+                    </tr>
+                    </thead>
+                    <tbody style="font-size: .8em;font-weight: bold;color: #fff;">
+                    <tr>
+                        <td>lPad Support</td>
+                    </tr>
+                    <tr>
+                        <td>PineappleCare+ for lPad</td>
+                    </tr>
+                    <tr>
+                        <td>lPad Harmony OS 4</td>
+                    </tr>
+                    <tr>
+                        <td>Apps by Pineapple</td>
+                    </tr>
+                    <tr>
+                        <td>lCloud+</td>
+                    </tr>
+                    <tr>
+                        <td>Education</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="lPhone-content dropdown-content">
+            <div class="content">
+                <table>
+                    <thead style="color: #ccc; font-size: .8em;font-weight: 200;">
+                    <tr>
+                        <th>Explore lPhone</th>
+                    </tr>
+                    </thead>
+                    <tbody style="font-size: 1.3em;font-weight: bold;color: #fff;">
+                    <tr>
+                        <td>Explore All lPhone</td>
+                    </tr>
+                    <tr>
+                        <td>lPhone 15 Pro</td>
+                    </tr>
+                    <tr>
+                        <td>lPhone 15</td>
+                    </tr>
+                    <tr>
+                        <td>lPhone 14</td>
+                    </tr>
+                    <tr>
+                        <td>lPhone 13</td>
+                    </tr>
+                    <tr>
+                        <td>lPhone SE</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <table>
+                    <thead style="color: #ccc; font-size: .8em;font-weight: 200;">
+                    <tr>
+                        <th>Shop lPhone</th>
+                    </tr>
+                    </thead>
+                    <tbody style="font-size: .8em;font-weight: bold;color: #fff;">
+                    <tr>
+                        <td>Shop lPhone</td>
+                    </tr>
+                    <tr>
+                        <td>lPhone Accessories</td>
+                    </tr>
+                    <tr>
+                        <td>Pineapple Trade In</td>
+                    </tr>
+                    <tr>
+                        <td>Carrier Deals at Pineapple</td>
+                    </tr>
+                    <tr>
+                        <td>Financing</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <table>
+                    <thead style="color: #ccc; font-size: .8em;font-weight: 200;">
+                    <tr>
+                        <th>More from lPhone</th>
+                    </tr>
+                    </thead>
+                    <tbody style="font-size: .8em;font-weight: bold;color: #fff;">
+                    <tr>
+                        <td>lPhone Support</td>
+                    </tr>
+                    <tr>
+                        <td>PineappleCare+ for lPhone</td>
+                    </tr>
+                    <tr>
+                        <td>los 17</td>
+                    </tr>
+                    <tr>
+                        <td>Apps by Pineapple</td>
+                    </tr>
+                    <tr>
+                        <td>lPhone Privacy</td>
+                    </tr>
+                    <tr>
+                        <td>lCloud+</td>
+                    </tr>
+                    <tr>
+                        <td>Wallet,Pay,Card</td>
+                    </tr>
+                    <tr>
+                        <td>Sandy</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="content1">
+        <div style="font-size: 2.5em;font-weight: bold;margin-top: 7%">lPhone 15 Pro</div>
+        <div style="margin-top: 10px;">Titanium.So strong.So light.So Pro.</div>
+        <div style="margin-top: 10px;font-size: 1.4em;font-weight: bold;display: flex;justify-content: center;align-items: center;">
+            <a href="#" style="color: rgb(94,90,291)">Learn more</a>
+            <img style="width: 2em;height: 2em;" src="../img/right.png" alt="">
+            <a href="#" style="color: rgb(94,90,291);margin-left: 2em">Buy</a>
+            <img style="width: 2em;height: 2em;" src="../img/right.png" alt="">
+        </div>
+    </div>
+    <div class="content2">
+        <div class="content2-img">
+        </div>
+    </div>
+    <div class="content1">
+        <div style="color: #000000;font-size: 2.5em;font-weight: bold;margin-top: 18%">lPhone 15</div>
+        <div style="margin-top: 10px;color: #000000;">New camera.New design.Newphoria.</div>
+        <div style="margin-top: 10px;font-size: 1.4em;font-weight: bold;display: flex;justify-content: center;align-items: center;">
+            <a href="#" style="color: rgb(94,90,291)">Learn more</a>
+            <img style="width: 2em;height: 2em;" src="../img/right.png" alt="">
+            <a href="#" style="color: rgb(94,90,291);margin-left: 2em">Buy</a>
+            <img style="width: 2em;height: 2em" src="../img/right.png" alt="">
+        </div>
+    </div>
+    <div class="content3">
+        <div class="content3-img">
+        </div>
+    </div>
+
+
+    <div class="content4">
+        <div class="content4-top">
+            <div class="content4-top-left">
+                <div class="content4-top-left-img">
+                    <p style="font-size: 2em;padding-top: 3%;font-weight: bold">Trade In</p>
+                    <p style="font-weight: 600;margin-top: 1%">Get $200 - $650 in credit when</p>
+                    <p style="font-weight: 600;margin-bottom: 1%">you trade in lPhone 11 or higher.</p>
+                    <a href="#" style="color: rgb(5,133,236);margin-left: .5em">See what your device is worth ></a>
+                </div>
+            </div>
+
+            <div class="content4-top-right">
+                <div class="content4-top-right-img">
+                    <p style="font-size: 2em;padding-top: 3%;font-weight: bold">WATCH</p>
+                    <p style="font-weight: bold;color: orangered;font-size: .5em">ULTRA 2</p>
+                    <p style="font-weight: 600;margin-bottom: 1%;margin-top: 1%">Next level adventure.</p>
+                    <a href="#" style="color: rgb(5,133,236);margin-left: .5em">Learn more ></a>
+                    <a href="#" style="color: rgb(5,133,236);margin-left: .5em">Buy ></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content4-bottom">
+
+            <div class="content4-bottom-left">
+                <div class="content4-bottom-left-img">
+                    <p style="font-size: 2em;padding-top: 3%;font-weight: bold">PacBook Pro</p>
+                    <p style="font-weight: 600;margin-top: 1%;margin-bottom: 1%">Mind-blowing.Head-turning.</p>
+                    <a href="#" style="color: rgb(5,133,236);margin-left: .5em">See what your device is worth ></a>
+                </div>
+            </div>
+
+            <div class="content4-bottom-right">
+                <div class="content4-bottom-right-img">
+                    <p style="font-size: 2em;padding-top: 3%;font-weight: bold">lPad</p>
+                    <p style="font-weight: 600;margin-bottom: 1%;margin-top: 1%">lPad mini is even more versatile.</p>
+                    <a href="#" style="color: rgb(5,133,236);margin-left: .5em">Learn more ></a>
+                    <a href="#" style="color: rgb(5,133,236);margin-left: .5em">Buy ></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="content5">
+        <el-carousel class="el-carousel" :interval="3000" type="card" height="400px">
+            <el-carousel-item v-for="item in 5" :key="item">
+                <div :style="{ maxWidth: '800px',minWidth: '800px',margin:'auto', height: '400px', backgroundImage: 'url(' + getImageUrl(item+4) + ')',backgroundSize:'100% 100%' ,borderRadius:'5px'}">
+                </div>
+            </el-carousel-item>
+        </el-carousel>
+    </div>
+
+
+    <div style="width: 100%;height: 20px;"></div>
+
+    <div class="content6">
+        <div class="content6-title">
+            <p style="text-align: center;font-size: 1.5em;font-weight: bold;font-family: Arial, sans-serif;padding-top: 1em;">
+                The Song of Mulan
+            </p>
+            <hr style="margin-top: 10px;margin-bottom: 10px">
+            <p style="text-indent: 2em;font-family: 'Arial Narrow',serif;font-size: .8em">
+                One sigh after another,Mulan sat opposite the door weaving;But no sound of the shuttle was heard,Except
+                the sighs of the girl。
+
+                One sigh after another,Mulan sat opposite the door weaving;But no sound of the shuttle was heard,Except
+                the sighs of the girl。
+
+                When asked what she was pondering over,When asked what she had called to mind,Nothing special the girl
+                was pondering over,Nothing special the girl had called to mind。
+
+                Last night I saw the draft dispatch,The Khan is mustering a mighty army;The roster consists of many
+                muster rolls,And every roll has Father’s name on it。
+
+                Father has no grown son,Nor Mulan an elder brother;I want to buy a saddle and a horse,And from now on
+                fight in place of my father。"
+            </p>
+            <hr style="margin-top: 30px">
+        </div>
+        <div class="content6-center">
+            <table>
+                <thead>
+                <tr>
+                    <th>Shop and Learn</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Store</td>
+                </tr>
+                <tr>
+                    <td>Pac</td>
+                </tr>
+                <tr>
+                    <td>lPad</td>
+                </tr>
+                <tr>
+                    <td>lPhone</td>
+                </tr>
+                <tr>
+                    <td>Watch</td>
+                </tr>
+                <tr>
+                    <td>Vision</td>
+                </tr>
+                <tr>
+                    <td>SkyPods</td>
+                </tr>
+                <tr>
+                    <td>TV & Home</td>
+                </tr>
+                <tr>
+                    <td>SkyTag</td>
+                </tr>
+                <tr>
+                    <td>Accessories</td>
+                </tr>
+                <tr>
+                    <td>Gift Cards</td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">Pineapple Wallet</td>
+                </tr>
+                <tr>
+                    <td>Wallet</td>
+                </tr>
+                <tr>
+                    <td>Pineapple Card</td>
+                </tr>
+                <tr>
+                    <td>Pineapple Pay</td>
+                </tr>
+                <tr>
+                    <td>Pineapple Cash</td>
+                </tr>
+
+
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                <tr>
+                    <th>Account</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Manage Your Pineapple ID</td>
+                </tr>
+                <tr>
+                    <td>Pineapple Store Account</td>
+                </tr>
+                <tr>
+                    <td>lCloud.com</td>
+                </tr>
+                <tr>
+                    <td>lPhone</td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">Entertainment</td>
+                </tr>
+                <tr>
+                    <td>Pineapple One</td>
+                </tr>
+                <tr>
+                    <td>Pineapple TV+</td>
+                </tr>
+                <tr>
+                    <td>Pineapple Music</td>
+                </tr>
+                <tr>
+                    <td>Pineapple Arcade</td>
+                </tr>
+                <tr>
+                    <td>Pineapple Fitness+</td>
+                </tr>
+                <tr>
+                    <td>Pineapple News+</td>
+                </tr>
+                <tr>
+                    <td>Pineapple Podcasts</td>
+                </tr>
+                <tr>
+                    <td>Pineapple Books</td>
+                </tr>
+                <tr>
+                    <td>App Store</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <thead>
+                <tr>
+                    <th>Pineapple Store</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Find a Store</td>
+                </tr>
+                <tr>
+                    <td>Genius Bar</td>
+                </tr>
+                <tr>
+                    <td>Today at Pineapple</td>
+                </tr>
+                <tr>
+                    <td>Pineapple Camp</td>
+                </tr>
+                <tr>
+                    <td>Pineapple Store App</td>
+                </tr>
+                <tr>
+                    <td>Certified Refurbished</td>
+                </tr>
+                <tr>
+                    <td>Pineapple Trade In</td>
+                </tr>
+                <tr>
+                    <td>Financing</td>
+                </tr>
+                <tr>
+                    <td>Carrier Deals at Pineapple</td>
+                </tr>
+                <tr>
+                    <td>Order Status</td>
+                </tr>
+                <tr>
+                    <td>Shopping Help</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <thead>
+                <tr>
+                    <th>For Business</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Pineapple and Business</td>
+                </tr>
+                <tr>
+                    <td>Shop for Business</td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">For Education</td>
+                </tr>
+                <tr>
+                    <td>Pineapple and Education</td>
+                </tr>
+                <tr>
+                    <td>Shop for K-12</td>
+                </tr>
+                <tr>
+                    <td>Shop for College</td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">For Healthcare</td>
+                </tr>
+                <tr>
+                    <td>Pineapple in Healthcare</td>
+                </tr>
+                <tr>
+                    <td>Health on Pineapple Watch</td>
+                </tr>
+                <tr>
+                    <td>Health Records on lPhone</td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">For Government</td>
+                </tr>
+                <tr>
+                    <td>Shop for Government</td>
+                </tr>
+                <tr>
+                    <td>Shop for Veterans and Military</td>
+                </tr>
+                </tbody>
+            </table>
+
+
+        </div>
+        <hr>
+        <hr style="position: relative;bottom: 2em">
+        <div class="content6-foot">
+            <p>FINAL INTERPRETATION RIGHT BELONGS TO：</p>
+            <a href="https://blog.csdn.net/weixin_55801899?type=blog">Disney蛋蛋</a>
+            <div class="img"></div>
+        </div>
+    </div>
+
+
+
+    <el-backtop :bottom="20" :right="50" :visibility-height="100">
+        <div class="backTop-custom-style">Up</div>
+    </el-backtop>
+</div>
+</body>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data: function () {
+            return {}
+        },
+        methods: {
+            getImageUrl(item) {
+                return `../img/${item}.jpg`;
+            },
+        },
+        update: {},
+    })
+</script>
+<script src="../js/index.js"></script>
+</html>
