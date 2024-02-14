@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lPhone 15 Pro and lPhone 15 Pro Max - Pineapple</title>
+    <link rel="stylesheet" href=" ../css/lPhone.css"/>
+    <link rel="stylesheet" href="../css/elementui.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/element-ui@2.15.3/lib/theme-chalk/index.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="144x144" href="../img/icon.ico"/>
+    <link rel="apple-touch-icon" type="image/png" sizes="144x144" href="../img/icon.ico"/>
+    <script src="../js/vue.min.js"></script>
+    <script src="../js/elementui.js"></script>
+</head>
+<body>
+<div class="all" id="app">
+    <div class="title">
+        <nav id="navbar" class="nav">
+            <ul>
+                <li>
+                    <img style="width: 30%;height: 80%;margin-top: 5%;margin-left: 40%;" src="../img/logo.png"
+                         alt="图片加载失败！">
+                </li>
+                <li id="shop"><a href="./index.html">Shop</a></li>
+                <li id="Pac">Pac</li>
+                <li id="lPad">lPad</li>
+                <li id="lPhone">lPhone</li>
+                <li>Watch</li>
+                <li>Vision</li>
+                <li>SkyPods</li>
+                <li>TV & Home</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;Game</li>
+                <li>Accessories</li>
+                <li>&nbsp;&nbsp;&nbsp;Support</li>
+                <li>
+                    <img style="width: 20%;height: 70%;margin-top: 7.5%;margin-left: 20%;" src="../img/search.png"
+                         alt="图片加载失败！">
+                </li>
+                <li>
+                    <img style="width: 20%;height: 70%;margin-top: 7.5%;" src="../img/shop.png" alt="图片加载失败！">
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content1">
+        <p>Get $200–$650 in credit toward iPhone 15 Pro when you trade in iPhone 11 or higher.* <a href="./lPhone15ProBuy.html">Buy</a>
+        </p>
+    </div>
+    <div class="content2">
+        <div class="content2-title">lPhone 15 Pro</div>
+        <div class="content2-img1">123</div>
+        <div class="content2-img2">123</div>
+
+        <div class="content2-buy">
+            <div class="content2-buy-top">
+                <button><a href="./lPhone15ProBuy.html">Buy</a></button>
+                <p>From $999 or $41.62/mo.for 24 mo.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content3">
+        <div class="content3-top">
+            <p>Get the highlights.</p>
+            <a href="#">Watch the event ></a>
+            <a href="#">Watch the film</a>
+        </div>
+        <div class="content3-bottom">
+            <el-carousel class="el-carousel" :interval="3000" type="card" height="400px">
+                <el-carousel-item v-for="item in 5" :key="item">
+                    <div :style="{ maxWidth: '800px',minWidth: '800px',margin:'auto', height: '400px', backgroundImage: 'url(' + getImageUrl(item+4) + ')',backgroundSize:'100% 100%' ,borderRadius:'5px'}">
+                    </div>
+                </el-carousel-item>
+            </el-carousel>
+        </div>
+    </div>
+
+    <div class="content4">
+        <div class="content4-top">
+            <p style="color: #FFFFFF;font-size: 4em;font-weight: bold">P17 Pro chip.</p>
+            <p style="color: #FFFFFF;font-size: 4em;font-weight: bold">A monster win for gaming.</p>
+            <p style="font-size: 1.5em;color: #cccccc;margin-top: .5em;font-weight: bold">It‘s here.The biggest redesign in the history of Pineapple.</p>
+        </div>
+        <div class="content4-content">
+            <div class="content4-content-content"></div>
+        </div>
+        <div class="content4-bottom">
+            <p>HonKai:Star Rail</p>
+        </div>
+    </div>
+
+    <div class="content5">
+        <div class="content5-title">
+            <p>Explore the full story</p>
+        </div>
+        <div class="content5-top">
+            <p>lPhone.</p>
+            <p>Forged in titanium.</p>
+        </div>
+        <div class="content5-bottom">
+            <div class="content5-bottom-top"></div>
+            <div class="content5-bottom-bottom">
+                <div class="content5-bottom-bottom-left"></div>
+                <div class="content5-bottom-bottom-right"></div>
+            </div>
+        </div>
+
+        <div class="content6">
+
+        </div>
+    </div>
+
+    <el-backtop :bottom="20" :right="50" :visibility-height="100">
+        <div class="backTop-custom-style">Up</div>
+    </el-backtop>
+</div>
+</body>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data: function () {
+            return {}
+        },
+        methods: {
+            getImageUrl(item) {
+                return `../img/${item}.jpg`;
+            },
+        },
+        update: {},
+    })
+</script>
+<script src="../js/lPhone15Pro.js"></script>
+</html>

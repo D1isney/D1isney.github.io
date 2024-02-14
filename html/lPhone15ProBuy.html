@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Buy lPhone 15 Pro and lPhone 15 Pro Max - Pineapple</title>
+    <link rel="stylesheet" href=" ../css/lPhone15ProBuy.css"/>
+    <link rel="stylesheet" href="../css/elementui.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/element-ui@2.15.3/lib/theme-chalk/index.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="144x144" href="../img/icon.ico"/>
+    <link rel="apple-touch-icon" type="image/png" sizes="144x144" href="../img/icon.ico"/>
+    <script src="../js/vue.min.js"></script>
+    <script src="../js/elementui.js"></script>
+</head>
+<body>
+<div class="all" id="app">
+    <div class="title">
+        <nav class="nav">
+            <ul>
+                <li>
+                    <img style="width: 30%;height: 80%;margin-top: 5%;margin-left: 40%;" src="../img/logo.png"
+                         alt="图片加载失败！">
+                </li>
+                <li id="shop"><a href="./index.html">Shop</a></li>
+                <li id="Pac">Pac</li>
+                <li id="lPad">lPad</li>
+                <li id="lPhone">lPhone</li>
+                <li>Watch</li>
+                <li>Vision</li>
+                <li>SkyPods</li>
+                <li>TV & Home</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;Game</li>
+                <li>Accessories</li>
+                <li>&nbsp;&nbsp;&nbsp;Support</li>
+                <li>
+                    <img style="width: 20%;height: 70%;margin-top: 7.5%;margin-left: 20%;" src="../img/search.png"
+                         alt="图片加载失败！">
+                </li>
+                <li>
+                    <img style="width: 20%;height: 70%;margin-top: 7.5%;" src="../img/shop.png" alt="图片加载失败！">
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="content1">
+        <div class="content1-content">
+
+            <div class="content1-content-body1">
+                <p style="font-size: 1.2em">Carrier Deals at Pineapple</p>
+                <p style="font-size: 1.1em;color: #3a8ee6">See all deals</p>
+            </div>
+            <div class="content1-content-body2">
+                <p style="font-size: 1.1em">Pay as low as $0 after</p>
+                <p style="font-size: 1.1em">trade-in</p>
+            </div>
+            <div class="content1-content-body3">
+                <p style="font-size: 1.1em">Pay as low as $8.30/mo</p>
+                <p style="font-size: 1.1em">after trade-in.</p>
+            </div>
+            <div class="content1-content-body4">
+                <p style="font-size: 1.1em">Pay as low as $4.69/mo</p>
+                <p style="font-size: 1.1em">after trade-in.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="content2">
+        <div class="content2-title">
+            <p style="font-size:1.6em;font-weight: bold;color: red;">New</p>
+            <p style="font-size: 2.5em;font-weight: bold">Buy lPhone 15 Pro</p>
+            <p style="font-size: 1.3em">From $999 or $41.62/mo.for 24 mo.</p>
+        </div>
+
+        <div class="content2-content">
+            <div class="content2-content-left">
+                <el-carousel :interval="5000" arrow="always">
+                    <el-carousel-item v-for="item in 4" :key="item">
+                        <div :style="{ maxWidth: '800px',minWidth: '800px',margin:'auto', height: '400px', backgroundImage: 'url(' + getImageUrl(item+9) + ')',backgroundSize:'100% 100%' ,borderRadius:'5px'}">
+                        </div>
+                    </el-carousel-item>
+                </el-carousel>
+            </div>
+            <div class="content2-content-right">
+                <el-select v-model="value1" placeholder="请选择型号">
+                    <el-option
+                            v-for="item in options1"
+                            :key="item.value"
+                            :label="item.label"
+                            :value="item.value">
+                    </el-option>
+                </el-select>
+                <el-select v-model="value2" placeholder="请选择内存大小">
+                    <el-option
+                            v-for="item in options2"
+                            :key="item.value"
+                            :label="item.label"
+                            :value="item.value">
+                    </el-option>
+                </el-select>
+                <el-select v-model="value3" placeholder="请选择颜色">
+                    <el-option
+                            v-for="item in options3"
+                            :key="item.value"
+                            :label="item.label"
+                            :value="item.value">
+                    </el-option>
+                </el-select>
+                <el-button type="primary">购买</el-button>
+            </div>
+
+            <div style="width: 100%;height: 20px;"></div>
+
+            <div class="content6">
+                <div class="content6-title">
+                    <p style="text-align: center;font-size: 1.5em;font-weight: bold;font-family: Arial, sans-serif;padding-top: 1em;">
+                        The Song of Mulan
+                    </p>
+                    <hr style="margin-top: 10px;margin-bottom: 10px">
+                    <p style="text-indent: 2em;font-family: 'Arial Narrow',serif;font-size: .8em">
+                        One sigh after another,Mulan sat opposite the door weaving;But no sound of the shuttle was heard,Except
+                        the sighs of the girl。
+
+                        One sigh after another,Mulan sat opposite the door weaving;But no sound of the shuttle was heard,Except
+                        the sighs of the girl。
+
+                        When asked what she was pondering over,When asked what she had called to mind,Nothing special the girl
+                        was pondering over,Nothing special the girl had called to mind。
+
+                        Last night I saw the draft dispatch,The Khan is mustering a mighty army;The roster consists of many
+                        muster rolls,And every roll has Father’s name on it。
+
+                        Father has no grown son,Nor Mulan an elder brother;I want to buy a saddle and a horse,And from now on
+                        fight in place of my father。"
+                    </p>
+                    <hr style="margin-top: 30px">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data: function () {
+            return {
+                options1: [{
+                    value: '选项1',
+                    label: 'lPhone 15 Pro'
+                }, {
+                    value: '选项2',
+                    label: 'lPhone 15 Pro Max'
+                }],
+                options2: [{
+                    value: '选项1',
+                    label: '128GB'
+                }, {
+                    value: '选项2',
+                    label: '256GB'
+                }, {
+                    value: '选项3',
+                    label: '512GB'
+                }, {
+                    value: '选项4',
+                    label: '1TB'
+                }],
+                options3: [{
+                    value: '选项1',
+                    label: 'Natural Titanium'
+                }, {
+                    value: '选项2',
+                    label: 'Blue Titanium'
+                }, {
+                    value: '选项3',
+                    label: 'White Titanium'
+                }, {
+                    value: '选项4',
+                    label: 'Black Titanium'
+                }],
+                value1: '',
+                value2: '',
+                value3: '',
+            }
+        },
+        methods: {
+            getImageUrl(item) {
+                return `../img/${item}.jpg`;
+            },
+            handleChange(value) {
+                console.log(value);
+            }
+        },
+        update: {},
+    })
+</script>
+</html>
